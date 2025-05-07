@@ -1,4 +1,78 @@
-<script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: BẠN LÀ AI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .quiz-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    .quiz-container h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .quiz-container .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .quiz-container .options li {
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .quiz-container .options li:hover {
+      background-color: #e0e0e0;
+    }
+    .quiz-container .options li.selected {
+      background-color: #d0d0d0;
+    }
+    .quiz-container button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .quiz-container button:disabled {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h2>Chọn BẠN LÀ AI</h2>
+    <ul class="options">
+      <li data-answer="A">A. Biết nấu ăn</li>
+      <li data-answer="B">B. Biết đọc suy nghĩ của bạn</li>
+      <li data-answer="C">C. Dành thật nhiều thời gian cho bạn</li>
+    </ul>
+    <button id="submitBtn" disabled>Gửi câu trả lời</button>
+  </div>
+
+  <script>
     const options = document.querySelectorAll('.options li');
     const submitBtn = document.getElementById('submitBtn');
     let selectedAnswer = null;
