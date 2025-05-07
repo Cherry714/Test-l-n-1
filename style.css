@@ -1,0 +1,9 @@
+ <div class="quiz-container">
+    <h2>Chọn khả năng đặc biệt cho người yêu</h2>
+    <ul class="options">
+      <li data-answer="A">A. Biết nấu ăn</li>
+      <li data-answer="B">B. Biết đọc suy nghĩ của bạn</li>
+      <li data-answer="C">C. Dành thật nhiều thời gian cho bạn</li>
+    </ul>
+    <button id="submitBtn" disabled>Gửi câu trả lời</button>
+  </div>
