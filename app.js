@@ -1,5 +1,5 @@
  <div class="quiz-container">
-    <h2>Chọn BẠN LÀ AI</h2>
+    <h2>Chọn Khả năng đặc biệt cho người yêu</h2>
     <ul class="options">
       <li data-answer="A">A. Biết nấu ăn</li>
       <li data-answer="B">B. Biết đọc suy nghĩ của bạn</li>
