@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Điều gì khiến bạn yêu người ấy</title>
-  <style>
-    body {
+body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       margin: 0;
@@ -61,38 +54,3 @@
   </style>
 </head>
 <body>
-
-  <div class="quiz-container">
-    <h2>Chọn Điều gì khiến bạn yêu người ấy</h2>
-    <ul class="options">
-      <li data-answer="A">A. Biết nấu ăn</li>
-      <li data-answer="B">B. Biết đọc suy nghĩ của bạn</li>
-      <li data-answer="C">C. Dành thật nhiều thời gian cho bạn</li>
-    </ul>
-    <button id="submitBtn" disabled>Gửi câu trả lời</button>
-  </div>
-
-  <script>
-    const options = document.querySelectorAll('.options li');
-    const submitBtn = document.getElementById('submitBtn');
-    let selectedAnswer = null;
-
-    options.forEach(option => {
-      option.addEventListener('click', () => {
-        options.forEach(opt => opt.classList.remove('selected'));
-        option.classList.add('selected');
-        selectedAnswer = option.getAttribute('data-answer');
-        submitBtn.disabled = false;
-      });
-    });
-
-    submitBtn.addEventListener('click', () => {
-      if (selectedAnswer) {
-        alert(`Bạn đã chọn: ${selectedAnswer}`);
-        // Tại đây, bạn có thể xử lý thêm như gửi dữ liệu hoặc chuyển sang câu hỏi tiếp theo
-      }
-    });
-  </script>
-
-</body>
-</html>
